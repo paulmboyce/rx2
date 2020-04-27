@@ -1,6 +1,6 @@
 import React from "react";
 import rxStore from "../state/rxStore";
-import createPolicy from "../state/actions/createPolicy";
+import { createPolicy } from "../state/actions/createPolicy";
 
 class App extends React.Component {
 	constructor(props) {

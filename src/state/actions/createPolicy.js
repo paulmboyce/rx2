@@ -1,6 +1,7 @@
+const CREATE_POLICY = "CREATE_POLICY";
 const createPolicy = function (name, fee) {
 	return {
-		type: "CREATE_POLICY",
+		type: CREATE_POLICY,
 		payload: {
 			name: name,
 			fee: fee,
@@ -8,4 +9,4 @@ const createPolicy = function (name, fee) {
 	};
 };
 
-export default createPolicy;
+export { createPolicy, CREATE_POLICY };
