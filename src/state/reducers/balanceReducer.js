@@ -1,4 +1,4 @@
-import { CREATE_POLICY } from "../actions/createPolicy";
+import { CREATE_POLICY } from "../actions/createPolicyAction";
 
 const balanceReducer = function (oldBalance = 100, action) {
 	if (action.type === CREATE_POLICY) {
@@ -8,4 +8,4 @@ const balanceReducer = function (oldBalance = 100, action) {
 	return oldBalance;
 };
 
-export default balanceReducer;
+export { balanceReducer };
